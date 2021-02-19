@@ -1,7 +1,8 @@
 <template>
    <b-container>
      <b-row>
-       <b-col>
+       <b-col v-for="im in pixaImagenes" :key"im.id" md="2" class="py-2 text-center">
+           <b-img thumbnail fluid src=im.previewURL">
        </b-col>
      </b-row>
    </b-container>
