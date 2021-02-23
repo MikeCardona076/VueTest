@@ -1,14 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue"
+import Saints from './components/SaintSeiya/Saints.vue'
 
-createApp(App).mount('#app')
-
-var app = new Vue({
-	el: '#app',
-  data: {
-      name: '',
-      counter: 0
-  }
+createApp(Saints).mount('#saints')
+var saints = new Vue({
+	el: '#saints'
 });
 
-export default app
+export default saints
